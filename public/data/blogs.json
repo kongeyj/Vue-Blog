@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Understanding Vue.js Directives",
+    "time": "2024-08-10T14:30:00Z",
+    "tags": ["Vue.js", "Directives", "Web Development"],
+    "author": "Jane Doe",
+    "content": "Vue.js provides a set of built-in directives that offer a way to manipulate the DOM and bind data to it. Directives such as `v-bind`, `v-model`, and `v-for` are crucial for building dynamic applications with Vue. In this blog post, we will explore the most commonly used directives and how to utilize them effectively in your Vue.js applications.",
+    "index": 1
+  },
+  {
+    "title": "Introduction to Tailwind CSS",
+    "time": "2024-08-11T09:00:00Z",
+    "tags": ["Tailwind CSS", "CSS", "Front-end"],
+    "author": "John Smith",
+    "content": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build custom designs quickly. Unlike traditional CSS frameworks, Tailwind encourages using utility classes directly in your markup rather than writing custom CSS. This post will cover the basics of Tailwind CSS, including how to set it up and some tips for using its utility classes effectively.",
+    "index": 2
+  },
+  {
+    "title": "Getting Started with Vuex for State Management",
+    "time": "2024-08-12T16:00:00Z",
+    "tags": ["Vuex", "State Management", "Vue.js"],
+    "author": "Alice Johnson",
+    "content": "Vuex is a state management pattern and library for Vue.js applications. It helps you manage shared state in a predictable and organized way. This article will introduce you to Vuex, explaining its core concepts like state, mutations, actions, and getters, and demonstrate how to set it up in your Vue.js projects.",
+    "index": 3
+  },
+  {
+    "title": "Best Practices for JavaScript Async/Await",
+    "time": "2024-08-13T11:00:00Z",
+    "tags": ["JavaScript", "Async/Await", "Programming"],
+    "author": "Emily Davis",
+    "content": "Async/await is a modern approach to handling asynchronous code in JavaScript, making it easier to write and understand. This blog post will cover best practices for using async/await, including error handling, chaining multiple promises, and debugging asynchronous code.",
+    "index": 4
+  },
+  {
+    "title": "Exploring the New Features in ES2024",
+    "time": "2024-08-14T13:00:00Z",
+    "tags": ["ES2024", "JavaScript", "New Features"],
+    "author": "Michael Brown",
+    "content": "ES2024 introduces several new features and improvements to JavaScript. This post will explore the most notable changes, including new syntax enhancements, built-in methods, and performance improvements. Learn how these updates can enhance your coding experience and improve your JavaScript applications.",
+    "index": 5
+  }
+]
