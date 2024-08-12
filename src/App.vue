@@ -3,6 +3,7 @@
     <div class=" mx-auto max-w-4xl h-full ">
       <router-view />
     </div>
+
   </div>
 
 </template>
@@ -12,7 +13,7 @@ import Home from './views/Home.vue'
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
   }
 }
 </script>
