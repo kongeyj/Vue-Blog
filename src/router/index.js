@@ -17,19 +17,41 @@ const routes = [
     component: Main,
     // 重定向
     redirect: "/home",
+    meta: { title: "home" },
     //子路由
     children: [
-      { path: "home", name: "home", component: Home },
-      { path: "blogs", name: "blogs", component: Blogs },
-      { path: "blogs/:id", name: "blog", component: Blog },
-      { path: "about", name: "about", component: About },
-      { path: "tags", name: "tags", component: Tags },
-      { path: "tags/:tagId", name: "tag", component: Tags },
+      { path: "home", name: "home", meta: { title: "home" }, component: Home },
+      {
+        path: "blogs",
+        name: "blogs",
+        meta: { title: "home" },
+        component: Blogs,
+      },
+      {
+        path: "blogs/:id",
+        name: "blog",
+        meta: { title: "blog" },
+        component: Blog,
+      },
+      {
+        path: "about",
+        name: "about",
+        meta: { title: "about" },
+        component: About,
+      },
+      { path: "tags", name: "tags", meta: { title: "tags" }, component: Tags },
+      {
+        path: "tags/:tagId",
+        name: "tag",
+        meta: { title: "tag" },
+        component: Tags,
+      },
     ],
   },
   {
     path: "*",
     name: "NotFound",
+    meta: { title: "404" },
     component: NotFound,
   },
 ];
@@ -37,6 +59,13 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   routes,
+});
+
+// 全局前置守卫
+router.beforeEach((to, from, next) => {
+  // 根据 meta.title 设置页面标题
+  document.title = to.meta.title || "vue-blog";
+  next();
 });
 
 //向外暴露

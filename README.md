@@ -23,3 +23,28 @@
 5. **代码检查并修复**:
    ```bush
    npm run lint
+
+## Docker 构建
+
+1. **启动Docker**
+2. **构建并启动容器**
+   ```bush
+    docker-compose up --build
+3. **访问网站**
+   ```bush
+   http://localhost:8001/home
+4. **停止并删除容器**
+   ```bush
+   docker-compose down
+
+## 修改端口
+docker-compose.yml文件中
+```bush
+services:
+  app:
+    container_name: docker-node-vue
+    restart: always
+    build: .
+    ports:
+      - '8001:8001'
+      #本地端口：Docker端口
